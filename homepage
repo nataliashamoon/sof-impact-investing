@@ -1,0 +1,162 @@
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/5DOA4fW0czm
+ */
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
+export default function Component() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
+        <div className="font-bold text-xl">Impact Investing Fund</div>
+        <nav className="flex gap-4 sm:gap-6">
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+            Mission
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+            Team
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+            Portfolio
+          </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
+            Contact
+          </Link>
+        </nav>
+      </header>
+      <main className="flex-1">
+        <section
+          className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-center"
+          style={{
+            backgroundImage: "url(/placeholder.svg?height=500&width=1000)",
+          }}
+        >
+          <div className="container px-4 md:px-6">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+              Impact Investing for a Better Future
+            </h1>
+            <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl dark:text-zinc-400 mt-4">
+              We are a student-run fund focused on creating positive social and environmental impact through
+              investments.
+            </p>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32" id="mission">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Mission</h2>
+            <p className="max-w-[600px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400 mt-4">
+              We aim to generate attractive financial returns while creating a positive impact on society and the
+              environment.
+            </p>
+            <Button className="mt-8">Learn More</Button>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-800" id="team">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Meet Our Team</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+              <div className="flex flex-col items-center space-y-2">
+                <img
+                  alt="Team Member 1"
+                  className="rounded-full"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+                <h3 className="font-semibold text-lg">John Doe</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">CEO</p>
+              </div>
+              <div className="flex flex-col items-center space-y-2">
+                <img
+                  alt="Team Member 2"
+                  className="rounded-full"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+                <h3 className="font-semibold text-lg">Jane Smith</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">CFO</p>
+              </div>
+              <div className="flex flex-col items-center space-y-2">
+                <img
+                  alt="Team Member 3"
+                  className="rounded-full"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+                <h3 className="font-semibold text-lg">Bob Johnson</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">COO</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32" id="portfolio">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Portfolio</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+              <div className="border rounded-md p-4">
+                <h3 className="font-semibold text-lg">Company 1</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Sector: Technology</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+                  A brief description of the company and its impact.
+                </p>
+              </div>
+              <div className="border rounded-md p-4">
+                <h3 className="font-semibold text-lg">Company 2</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Sector: Healthcare</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+                  A brief description of the company and its impact.
+                </p>
+              </div>
+              <div className="border rounded-md p-4">
+                <h3 className="font-semibold text-lg">Company 3</h3>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">Sector: Education</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2">
+                  A brief description of the company and its impact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-800" id="contact">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
+            <form className="grid grid-cols-1 gap-4 mt-8 max-w-md mx-auto">
+              <Input placeholder="Name" type="text" />
+              <Input placeholder="Email" type="email" />
+              <Input placeholder="Subject" type="text" />
+              <textarea className="resize-none border rounded-md p-2" placeholder="Message" />
+              <Button type="submit">Submit</Button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+        <p className="text-xs text-zinc-500 dark:text-zinc-400">© 2023 Impact Investing Fund. All rights reserved.</p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            Terms of Service
+          </Link>
+          <Link className="text-xs hover:underline underline-offset-4" href="#">
+            Privacy
+          </Link>
+        </nav>
+      </footer>
+    </div>
+  )
+}
